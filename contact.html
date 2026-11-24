@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Godwin Okoth.">
+  <title>Contact | Godwin Okoth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span>GO</span><div><b>Godwin Okoth</b><small>Personal Portfolio</small></div></div>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="academic.html">Academic Journey</a>
+    <a href="hobbies.html">Hobbies</a><a href="movies.html">Top 5 Movies</a>
+    <a class="active" href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+  <section class="intro">
+    <p class="eyebrow">LET'S CONNECT</p>
+    <h1>Contact Me</h1>
+    <p>I welcome professional conversations, academic collaboration and opportunities to learn.</p>
+  </section>
+  <section class="card contact">
+    <div>
+      <img src="images/contact.jpg" alt="Contact and communication illustration">
+      <h2>Contact Information</h2>
+      <p><b>Email:</b> <a href="mailto:Mainmine143@gmail.com">Mainmine143@gmail.com</a></p>
+      <p><b>Instagram:</b> <a href="https://www.instagram.com/r.i.z.z_g.o.d.y?knvt=MTl1NWcyangxZW13ZA%3D%3D" target="_blank" rel="noopener">Visit my Instagram</a></p>
+      <p><b>TikTok:</b> <a href="https://www.tiktok.com/@rizzyg5?_r=1&amp;_t=ZS-9BfrNEsRFBQ" target="_blank" rel="noopener">Visit my TikTok</a></p>
+      <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/" target="_blank" rel="noopener">Add your profile link</a></p>
+      <p><b>Facebook:</b> <a href="https://www.facebook.com/" target="_blank" rel="noopener">Add your profile link</a></p>
+    </div>
+    <div>
+      <h2>Send Me a Message</h2>
+      <form id="message-form">
+        <label for="sender-name">Your name</label><input id="sender-name" name="sender_name" required>
+        <label for="sender-email">Your email</label><input id="sender-email" name="sender_email" type="email" required>
+        <label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea>
+        <button class="button" type="submit">Send Message</button>
+        <p class="note">Front-end demonstration only: this form does not send or store messages. A backend/server is required for real message delivery.</p>
+        <p id="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+<script>
+document.getElementById('message-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  document.getElementById('status').textContent =
+    'Thank you. This is a demonstration; no message has been sent.';
+  this.reset();
+});
+</script>
+<footer>© 2026 Godwin Okoth | ICS 2216 Applied Computing | JKUAT</footer>
+</body>
+</html>
